@@ -5,7 +5,7 @@
 
 
 header {
-
+	
     background: rgb(38, 56, 50);
     width: 100%;
     height: 100px;
@@ -14,24 +14,32 @@ header {
 
 
 
-
 .center {
-    margin: auto;
-    position: relative;
+    position: fixed;
+	right: 0;
+	left: 0;
+	margin-right: auto;
+	margin-left: auto;
     top: 200px;
-	min-width:100px;
+	min-width:85%;
 	display: inline-block;
 	text-align: center;
-	left: 25%;
+	
 }
 
 
 body {
 
-    background: rgb(38, 56, 50);
-    justify-content: center;
+	background-image: url(images/background-image-0.jpg);
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    justify-content: center;.
+	
 
 }
+
+
 
 h1{
     color:whitesmoke;
@@ -39,7 +47,9 @@ h1{
 }
 
 .typewriter h1 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    width: auto;
+	display: inline-block;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid orange; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
@@ -51,8 +61,8 @@ h1{
   
   /* The typing effect */
   @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+    from { max-width: 0 }
+    to { max-width: 100% }
   }
   
   /* The typewriter cursor effect */
@@ -64,7 +74,8 @@ h1{
 </head>
 
 <body>
-  
+
+
 	<div class="typewriter center">
 		<h1 style=font-size:100px>TiberiusDev</h1>
 	</div>
